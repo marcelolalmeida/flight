@@ -1,0 +1,22 @@
+# Porto Seguro (BPS) -> São Paulo airports, one-way, 3 Jan 2027.
+# Prices are per passenger (what the airline sites show), so 1 vs 2 passengers
+# gives the same per-ticket price; max_price is per ticket.
+watches:
+  - name: BPS-GRU 3 Jan
+    origin: BPS
+    dest: GRU
+    date_from: 2027-01-03
+    airlines: [GOL, LATAM]
+    max_price: 3500
+    drop_pct: 10
+    notify_new_flights: true
+    adults: 2
+  - name: BPS-CGH 3 Jan
+    origin: BPS
+    dest: CGH
+    date_from: 2027-01-03
+    airlines: [GOL, LATAM]
+    max_price: 3500
+    drop_pct: 10
+    notify_new_flights: true
+    adults: 2
